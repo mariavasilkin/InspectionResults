@@ -1,0 +1,11 @@
+<style>
+ h1 { border-style:solid;
+      border-width:2px;}
+ #l { font-size:50px;}
+ #m { font-size:34px;}
+ .c { background-color:F5ADAD;}
+ .center {float:center;}
+ .right  {float:right;}
+ li:hover {background:aqua;}
+ li:active {background:red;}
+  </style>
