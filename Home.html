@@ -3,19 +3,28 @@
       border-width:2px;}
  #l { font-size:50px;}
  #m { font-size:34px;}
- .c { background-color:F5ADAD;}
+ .c { background-color:ffcdc4;}
+ .pattern { background-color:white;
+	    background-image: linear-gradient(90deg, rgba(200,0,0,.5) 
+	     50%, transparent 50%),
+	     linear-gradient(rgba(200,0,0,.5) 50%, 
+	     transparent 50%);
+	    background-size:50px 50px;}
  .center {float:center;}
  .right  {float:right;}
+ .rounded {border-radius: 50px;)
  li:hover {background:aqua;}
  li:active {background:red;}
   </style>
-<h1 id="l" class="c">New York City Restuarant Inspection Results</h1>
-<button id="m" type="button"><a href="/Cuisine">
+<body class="pattern">
+<h1 id="l" class="c rounded">New York City Restuarant Inspection Results</h1>
+<button id="m" type="button" class="c rounded "><a href="/Cuisine">
 	Grades Based on Cuisine
 </button>
-<button id="m" class="right" type="button"><a href="/Zip">
+<button id="m" class="c right rounded" type="button"><a href="/Zip">
 	Grades Based on Zip Code
 </button>
+</body>
 
 
 
