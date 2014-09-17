@@ -3,6 +3,7 @@ from flask import Flask,render_template
 
 app = Flask(__name__)
 
+
 @app.route("/Zip")
 def Zip():
     return render_template("Zip.html")
@@ -10,7 +11,10 @@ def Zip():
 @app.route("/Cuisine")
 def Cuisine():
     return render_template("Cuisine.html")
-
+@app.route("/")
+def home():
+    return render_template("Home.html")
+@app.route("/Zip/<zipcode>")
 
 def get_file(filename):
     l=[]
