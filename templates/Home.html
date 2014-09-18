@@ -12,12 +12,30 @@
 	    background-size:50px 50px;}
  .center {float:center;}
  .right  {float:right;}
- .rounded {border-radius: 50px;)
+ .rounded {border-radius: 25px;)
  li:hover {background:aqua;}
  li:active {background:red;}
   </style>
 <body class="pattern">
-<h1 id="l" class="c rounded">New York City Restuarant Inspection Results</h1>
+<h1 id="l" class="c center rounded">New York City Restuarant Inspection Results</h1>
+<h2 id="m" class="center c"> Pick a Borough or a Cuisine: </h1>
+<form name="Choose_Boro action="/borough method='POST'>
+	<select id="m" class="rounded">
+		<option value="q">Queens</option>
+		<option value="b">Brooklyn</option>
+		<option value="bx">Bronx</option>
+		<option value="s">Staten Island lol</option>
+		<option value="m">Manhattan</option>
+	</select>
+	<select id="m" class="rounded right">
+		<option value="q">Queens</option>
+		<option value="b">Brooklyn</option>
+		<option value="bx">Bronx</option>
+		<option value="s">Staten Island lol</option>
+		<option value="m">Manhattan</option>
+	</select>		
+	
+</form>
 <button id="m" type="button" class="c rounded "><a href="/Cuisine">
 	Grades Based on Cuisine
 </button>
