@@ -21,13 +21,21 @@ def get_file(filename):
     for line in open(filename).readlines():
         l.append(line.strip().split(','))
     return l
-    inspectiondata = get_file('Results_Without_violations.csv')
-    for list in inspectiondata:
-        print list
+    
+inspectiondata = get_file('Results_Without_violations.csv')
 
+
+'''
 def print_grades():
     for list in inspectiondata: 
         if list[1]=='QUEENS':
             grade=int(list[8])
             print grade
-    
+'''
+
+
+#print_grades(); 
+
+if __name__=="__main__":
+    app.debug=True
+    app.run();
