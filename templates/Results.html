@@ -9,9 +9,9 @@
  li:hover {background:aqua;}
  li:active {background:red;}
   </style>
-
+<html>
 <body>
-<h1 class="c">Number of Restaurants by {{col}} in {{boro}} </h1>
+<h1 class="c">Number of Restaurants by {{foodorgrade}} in {{boro}} </h1>
 <table>
 {% for key, value in dictionary.iteritems() %}
    <tr>
@@ -21,3 +21,4 @@
 {% endfor %}
 </table>
 </body> 
+</html>

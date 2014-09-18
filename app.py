@@ -30,7 +30,7 @@ def home():
                     d[list[col]]+=1
                 else:
                     d[list[col]]=1
-        return render_template("Results.html",dictionary=d,boro=boro,col=col)
+        return render_template("Results.html",dictionary=d,boro=boro,foodorgrade=foodorgrade)
 def get_file(filename):
     l=[]
     for line in open(filename).readlines():
