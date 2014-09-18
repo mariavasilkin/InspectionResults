@@ -1,21 +1,36 @@
+
 from flask import Flask,render_template
 
 
 app = Flask(__name__)
 
 
-@app.route("/Zip")
-def Zip():
-    return render_template("Zip.html")
 
-@app.route("/Cuisine")
-def Cuisine():
-    return render_template("Cuisine.html")
+'''@app.route("/Results")
+def Results():
+    
+    boro is a string, col is either 3 (food type) or 6 (grade)
+   
+    return render_template("Results.html",dictionary=d,boro=boro)
+    '''
 @app.route("/")
 def home():
-    return render_template("Home.html")
-@app.route("/Zip/<zipcode>")
-
+    if request.method =="GET":
+        return render_template("Home.html")
+    else:
+        boro = request.form["group1"]
+        col = 6
+        foodorgrade = request.form["group2"]
+        if foodorgrade == "Food":
+            col = 3
+        d = {}
+        for list in inspectiondata:
+            if list[1]==boro:
+                if d.has_key(list[col]):
+                    d[list[col]]+=1
+                else:
+                    d[list[col]]=1
+        return render_template("Results.html",dictionary=d,boro=boro,col=col)
 def get_file(filename):
     l=[]
     for line in open(filename).readlines():

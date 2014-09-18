@@ -18,26 +18,22 @@
   </style>
 <body class="pattern">
 <h1 id="l" class="c center rounded">New York City Restuarant Inspection Results</h1>
-<h2 id="m" class="center c"> Pick a Borough or a Cuisine: </h1>
-<form  method="POST">
-  
-	<select id="m" class="rounded" name="boro">
-		<option value="q">Queens</option>
-		<option value="b">Brooklyn</option>
-		<option value="bx">Bronx</option>
-		<option value="s">Staten Island lol</option>
-		<option value="m">Manhattan</option>
-	</select>
-	<li>
-	<input id="m"  class="c rounded" type="submit" 
-		name="b" value="Submit">
-	
-	
-</form>
+<form class="rounded c center" id="m" method="POST">
+	<h2> Pick a Borough: </h2>
+	<input type="radio" name="group1" value="B" checked> Brooklyn <br>
+	<input type="radio" name="group1" value="Bx"> Bronx <br>
+	<input type="radio" name="group1" value="M"> Manhattan <br>
+	<input type="radio" name="group1" value="Q"> Queens <br>
+	<input type="radio" name="group1" value="SI"> Staten Island <br>
 
-<button id="m" class="c right rounded" type="button"><a href="/Zip">
-	Grades Based on Zip Code
-</button>
+	<h2> Food or Grade? </h2>
+	<input type="radio" name="group2" value=3 checked >Cuisine type <br>
+	<input type="radio" name="group2" value=6> Inspection Grade <br>
+
+	<input id="m" type="submit" 
+		name=""
+		value="Submit">
+</form>
 </body>
 
 
