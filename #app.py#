@@ -14,6 +14,10 @@ def Cuisine():
 
 @app.route("/")
 def home():
+    button = request.args.get("b",None)
+    uname = request.args.get("uname",None)
+    pword = request.args.get("pword",None)
+    print button,uname,pword
     return render_template("Home.html")
 
 @app.route("/Zip/<zipcode>")
